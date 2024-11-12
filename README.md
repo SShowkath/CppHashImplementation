@@ -6,9 +6,8 @@ This program implements a hash table with **quadratic probing** for collision re
 
 ## **Features**
 - Resolves collisions using quadratic probing: 
-  \[
-  \text{bucket} = (\text{hash(key)} + i^2) \% \text{capacity}
-  \]
+  $$ \text{bucket} = (\text{hash(key)} + i^2) \% \text{capacity} $$
+
 - Resizes the table when the load factor exceeds 0.5, doubling capacity and ensuring it remains a prime number.
 - Prints the table, showing `_` for empty slots and values for occupied buckets.
 
